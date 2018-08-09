@@ -1,0 +1,34 @@
+<div class="container">
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">Vox Web Scraper</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/scrape">
+                        <span class="glyphicon glyphicon-log-in"></span> Scrape Vox</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">{{title}}</h3>
+        </div>
+        <div class="panel-body">
+            <p>Author: {{author}}</p>
+            <a href={{link}}>Link to article</a>
+        </div>
+    </div>
+
+    
+    
+    <div class="form-group">
+        <label for="comment">Comment:</label>
+        <textarea class="form-control" rows="5" id="comment">{{comment.body}}</textarea>
+        <div data-id={{_id}} class="btn btn-default" type="save" name="save" id="commentSave" value="Save Comment">Save Comment</div>
+    </div>
+</div>
